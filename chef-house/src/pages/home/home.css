@@ -1,0 +1,64 @@
+/* CSS */
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px violet, 0 0 40px violet, 0 0 50px violet, 0 0 60px violet, 0 0 70px violet;
+      color: transparent;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(242, 159, 242), 0 0 20px rgb(252, 185, 252), 0 0 25px rgb(236, 160, 236), 0 0 30px rgb(230, 157, 230), 0 0 35px rgb(232, 197, 232);
+      color: purple;
+    }
+  }
+  
+  .animated-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px; /* Adjust font size as needed */
+    color: rgb(5, 234, 255);
+    animation: glow 1.5s ease-in-out infinite alternate; /* Adjust animation duration and timing function */
+  }
+  
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce-text {
+    animation: bounce 2s infinite;
+    color: purple;
+    font-family: 'Pacifico', cursive; /* Use Roboto font */
+    font-weight: 700; /* Adjust font weight if needed */
+  }
+  
+  .menu{
+    font-family: 'Pacifico', cursive;
+  }
+
+  .text-muted{
+    font-family: 'Pacifico', cursive;
+  }
+
+  @keyframes slideAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-card {
+    animation: slideAnimation 1s ease infinite; /* Apply the animation to the cards */
+    font-family: 'Pacifico', cursive;
+  }
+  
